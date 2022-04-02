@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodrigo Rios</title>
+    <link rel="stylesheet" href="https://use.typekit.net/kgg6oyo.css">
+	<script src="https://kit.fontawesome.com/d6c806a619.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="./scss/home.css">
+    <link rel="stylesheet" href="./scss/nav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="home.js"></script>
+	<script src="nav.js"></script>
+</head>
+
+<body id="home">
+    <header>
+        <div class="contain">
+            <a href="/" class="logo">
+                <img src="public/Logo_RodrigoRios.png" />
+            </a>
+
+            <div id="nav-container">
+                <div id="nav-overlay"></div>
+                <nav id="nav-fullscreen">
+                    <ul class="nav_items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="haircuts.html">Haircuts</a></li>
+                        <li><a href="color.html">Color</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+    
+                <a id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home_hero">
+        <div class="image_wrapper">
+            <div class="bw_image bg_parallax"></div>
+            <div class="cl_image bg_parallax hidden"></div>
+        </div>
+        <div class="hero_text">
+            <h1>reinvent your <span>hair</span>style</h1>
+        </div>
+    </section>
+
+    <section class="intro_images">
+        <div class="content">
+            <a href="color.html" class="color_anchor fade_in" data-offset=".9">
+                <img src="public/Intro_Color.JPG" />
+                <h4 class="label">color</h4>
+            </a>
+            <a href="haircuts.html" class="haircuts_anchor fade_in" data-offset=".75">
+                <img src="public/Intro_Haircuts.jpg" />
+                <h4 class="label">haircuts</h4>
+            </a>
+        </div>
+    </section>
+
+	<section id="about">
+		<h4>about</h4>
+		<div class="content">
+			<img src="public/Rodrigo_Photo.jpg" />
+
+			<p>
+				Rodrigo is a forward-thinking and highly creative hair designer who has been constantly inspired by the latest trends in the hair beauty industry. His training undertaken at the Academies of Keune, L’Oreal, Wella, Schwarkopf and Jon Santos have resulted in a unique approach to address each costumer’s needs which stems from over twenty years of experience in the beauty industry.<br><br>
+				Rodrigo is originally from Sao Paulo City, Brazil, combination of a melting pot. He thinks that every haircut is like a canvas that deserves a personalized touch to empower consumers. He has a distinct style that pivots and leverages a fresh creativity, a direct result of an eclectic look built throughout continuous personal training and closely watching at what’s the next best thing happening in the hair industry. Keeping in mind costumers needs and expectations is paramount in making them engaged, loyal and wanting to come back for more.<br><br>
+				Besides the job that he really loves, Rodrigo is constantly inspired by people, new culture and a variety o styles and cuisines from all over the world. To get fully recharged, his gateway is a fully immersion into nature where he carves time for nourishing his inner peace and ever-changing creativity. 
+			</p>
+		</div>
+	</section>
+
+	<footer>
+		<h4>let's connect</h4>
+		<div class="content">
+			<div>
+				<h5>locations</h5>
+				<div class="details">
+					<p class="label">natura spa nyc</p>
+					<p class="address">STEINWAY STREET, ASTORIA, NY</p>
+					<p class="label">priscilla collins</p>
+					<p class="address">207 NEWBURYST, BOSTON, MA</p>
+				</div>
+			</div>
+			<div>
+				<h5>follow me on instagram</h5>
+				<a class="instagram_anchor" href="/">
+					<i class="fa-brands fa-instagram"></i>
+					<p>rodrioshair</p>
+				</a>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

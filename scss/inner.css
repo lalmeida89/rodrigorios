@@ -1,0 +1,126 @@
+header {
+  background-color: #0a0a0af2 !important;
+  -webkit-transition: all .3s ease .15s;
+  transition: all .3s ease .15s;
+}
+
+header a img {
+  height: 47px !important;
+}
+
+.inner .image_gallery {
+  padding: 8rem 0 5rem;
+  background-color: #eaf0e9;
+}
+
+.inner .image_gallery h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 0;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  color: #455750;
+}
+
+.inner .image_gallery .content {
+  padding: 0 1.5rem;
+}
+
+.inner .image_gallery .content .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3% 0;
+}
+
+.inner .image_gallery .content .row .image_wrapper {
+  width: 48%;
+  height: auto;
+}
+
+.inner .image_gallery .content .row .image_wrapper img {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: opacity .85s ease-in-out;
+  transition: opacity .85s ease-in-out;
+}
+
+.inner .image_gallery .content .row .image_wrapper img.active {
+  opacity: 1;
+}
+
+#shade {
+  display: none;
+  position: fixed;
+  z-index: 110;
+  background-color: #000;
+  opacity: .7;
+  width: 200vw;
+  height: 200vh;
+  left: -50vw;
+  top: -50vh;
+}
+
+#image_modal {
+  display: none;
+  position: fixed;
+  padding: 1.5rem;
+  background-color: #eaf0e9;
+  z-index: 111;
+  top: 145px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: calc(100% - 3rem);
+  max-width: 500px;
+  max-height: 80vh;
+}
+
+#image_modal .modal_close {
+  position: absolute;
+  right: 0;
+  top: -37px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80px;
+}
+
+#image_modal .modal_close p {
+  color: #fff;
+  font-weight: 300;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 24px;
+  margin: 0;
+  line-height: 0;
+  padding-bottom: 3px;
+}
+
+#image_modal .close_modal {
+  font-size: 25px;
+  color: #eaf0e9;
+}
+
+#image_modal img {
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=inner.css.map */

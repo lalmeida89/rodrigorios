@@ -1,0 +1,196 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+body {
+  text-align: left;
+  font-size: 20px;
+  color: #88a096;
+  margin: 0;
+}
+
+p {
+  font-family: "proxima-nova", sans-serif;
+  -webkit-columns: #88a096;
+          columns: #88a096;
+  font-size: .9rem;
+  text-align: left;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+}
+
+header .contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .contain a img {
+  height: 60px;
+  -webkit-transition: height .4s ease;
+  transition: height .4s ease;
+}
+
+header .contain #menu_btn {
+  height: 25px;
+  width: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+header .contain #menu_btn i {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  border-radius: 5px;
+  left: 0;
+  top: 0;
+  background-color: #88a096;
+  -webkit-transition: all .4s ease, opacity .2s ease .2s;
+  transition: all .4s ease, opacity .2s ease .2s;
+}
+
+header .contain #menu_btn i:nth-child(2) {
+  top: 10px;
+}
+
+header .contain #menu_btn i:nth-child(3) {
+  top: 20px;
+}
+
+header .contain #menu_btn.active i {
+  top: 6px !important;
+  width: 45px;
+}
+
+header .contain #menu_btn.active i:first-child {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+header .contain #menu_btn.active i:nth-child(2) {
+  opacity: 0;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+header .contain #menu_btn.active i:nth-child(3) {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+header.scroll {
+  background-color: #0a0a0af2;
+  -webkit-transition: all .3s ease .15s;
+  transition: all .3s ease .15s;
+}
+
+header.scroll a img {
+  height: 47px;
+}
+
+footer {
+  position: relative;
+}
+
+footer h4 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  margin: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: #88a096;
+  color: #eaf0e9;
+}
+
+footer .content {
+  padding: 3rem 1rem 3rem;
+}
+
+footer .content a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: #455750;
+}
+
+footer .content a p {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+  margin: 0;
+  font-weight: 400;
+  color: #455750;
+  margin: 0 0 0 .25rem;
+}
+
+footer .content > div h5 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.09em;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  margin: 0;
+  font-weight: 500;
+  color: #88a096;
+  margin-bottom: .5rem;
+}
+
+footer .content > div .details {
+  max-width: 250px;
+  margin: 1rem auto 3rem;
+}
+
+footer .content > div .details p {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+  margin: 0;
+  font-weight: 400;
+  color: #455750;
+}
+
+footer .content > div .details p.address {
+  font-size: .85rem;
+  letter-spacing: .07em;
+  margin-bottom: 1rem;
+  color: #88a096;
+}
+/*# sourceMappingURL=main.css.map */
