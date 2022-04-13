@@ -29,6 +29,8 @@ header a img {
 
 .inner .image_gallery .content {
   padding: 0 1.5rem;
+  max-width: 700px;
+  margin: auto;
 }
 
 .inner .image_gallery .content .row {
@@ -44,6 +46,16 @@ header a img {
 .inner .image_gallery .content .row .image_wrapper {
   width: 48%;
   height: auto;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow .4s ease;
+  transition: -webkit-box-shadow .4s ease;
+  transition: box-shadow .4s ease;
+  transition: box-shadow .4s ease, -webkit-box-shadow .4s ease;
+}
+
+.inner .image_gallery .content .row .image_wrapper:hover {
+  -webkit-box-shadow: 0px 1px 22px 3px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 1px 22px 3px rgba(0, 0, 0, 0.35);
 }
 
 .inner .image_gallery .content .row .image_wrapper img {
@@ -75,16 +87,11 @@ header a img {
 #image_modal {
   display: none;
   position: fixed;
-  padding: 1.5rem;
-  background-color: #eaf0e9;
   z-index: 111;
   top: 145px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: calc(100% - 3rem);
-  max-width: 500px;
-  max-height: 80vh;
 }
 
 #image_modal .modal_close {
@@ -102,6 +109,7 @@ header a img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 80px;
+  cursor: pointer;
 }
 
 #image_modal .modal_close p {
@@ -122,5 +130,9 @@ header a img {
 #image_modal img {
   width: 100%;
   height: auto;
+  width: 80vw;
+  max-width: 460px;
+  max-height: 80vh;
+  border: 1.5rem solid #eaf0e9;
 }
 /*# sourceMappingURL=inner.css.map */

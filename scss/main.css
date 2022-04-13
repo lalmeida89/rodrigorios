@@ -25,7 +25,7 @@ header {
   left: 0;
   width: 100%;
   padding: 1rem 1.5rem;
-  z-index: 1000;
+  z-index: 100;
 }
 
 header .contain {
@@ -38,6 +38,8 @@ header .contain {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 950px;
+  margin: auto;
 }
 
 header .contain a img {
@@ -106,6 +108,8 @@ header.scroll a img {
 
 footer {
   position: relative;
+  z-index: 5;
+  background-color: #eaf0e9;
 }
 
 footer h4 {
