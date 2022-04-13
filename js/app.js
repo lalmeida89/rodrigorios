@@ -9,8 +9,7 @@ $(document).ready(function(){
         headerPos(scrollPos, windowH);
      });
 
-	if (location.hash){
-		console.log(location.hash);
+	if (location.hash && $(`${location.hash}`).length){
 		scrollTo($(`${location.hash}`).offset().top, 750);
 	}
 

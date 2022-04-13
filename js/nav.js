@@ -3,7 +3,6 @@ $(document).ready(function() {
 		if ($('#nav-fullscreen').hasClass('open')) {
 			$('.nav_items li').removeClass('fade');
 		} else {
-			console.log('need this to trigger, the fuck');
 			$('.nav_items li').each(function(index) {
 				let link = $(this);
 				let timeout = index * 300;
