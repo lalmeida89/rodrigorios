@@ -7,12 +7,12 @@ $(document).ready(function(){
 
 	$(window).scroll(function() {
         let scrollPos = $(window).scrollTop();
-        heroAnim($('.hero .image_wrapper, .hero_text'), scrollPos, 50)
+        heroAnim($('.hero .image_wrapper, .hero_text'), scrollPos);
      });
 });
 
 const hero_animations = () => {
-	heroAnim($('.hero .image_wrapper > div, .hero_text'), 0, 50);
+	heroAnim($('.hero .image_wrapper > div, .hero_text'), 0);
 	split_chars($(".hero_text h1"))
 
 	setTimeout(() => {
@@ -35,30 +35,19 @@ const theater_animation = ele => {
 	}, 1000);
 }
 
-const heroAnim = (object, scrollPos, plx) => {
+const heroAnim = (object, scrollPos) => {
     let objParent = object.parent();
 
 	if (scrollPos <= (objParent.offset().top + objParent.outerHeight(true))
         && scrollPos + $(window).height() > objParent.offset().top) {
-            let a = $(window).height() - objParent.offset().top;
-            let b = $(window).height() + objParent.outerHeight(true);
-            let n = a/b;
-            let q = (a*20)/b * plx;
             let scrollPercent = scrollPos / objParent.outerHeight(true);
-            let scale = (1 - scrollPercent/2.5) * 75
-            let opacity = (1 - scrollPercent/2);
-
-            // $('.hero .image_wrapper').css({
-            //     transform: `translate3d(0, ${n}px, 0)`,
-            //     filter: `brightness(${opacity})`
-            // });
+            let opacity = (1 - scrollPercent/1.5);
 
 			$('.hero .image_wrapper > div').css({
 				filter: `brightness(${opacity})`
 			})
 
             $('.hero .hero_text').css({
-                transform: `translate3d(0, ${q}px, 0)`,
 				opacity: opacity
             })
 	} 
