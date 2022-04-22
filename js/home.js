@@ -42,19 +42,19 @@ const heroAnim = (object, scrollPos, plx) => {
         && scrollPos + $(window).height() > objParent.offset().top) {
             let a = $(window).height() - objParent.offset().top;
             let b = $(window).height() + objParent.outerHeight(true);
-            let n = (a*10)/b * plx;
-            let q = (a*22)/b * plx;
+            let n = a/b;
+            let q = (a*20)/b * plx;
             let scrollPercent = scrollPos / objParent.outerHeight(true);
             let scale = (1 - scrollPercent/2.5) * 75
             let opacity = (1 - scrollPercent/2);
 
-            $('.hero .image_wrapper').css({
-                transform: `translate3d(0, ${n}px, 0)`,
-                filter: `brightness(${opacity})`
-            });
+            // $('.hero .image_wrapper').css({
+            //     transform: `translate3d(0, ${n}px, 0)`,
+            //     filter: `brightness(${opacity})`
+            // });
 
 			$('.hero .image_wrapper > div').css({
-                backgroundSize: `auto ${scale}%`
+				filter: `brightness(${opacity})`
 			})
 
             $('.hero .hero_text').css({

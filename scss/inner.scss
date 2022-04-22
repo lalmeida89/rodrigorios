@@ -13,7 +13,6 @@ header {
 		@include subheader(1.5rem, 2rem, .2em);
 		width: 100%;
 		padding: 1rem 1.5rem;
-		// background-color: $mainColor;
 		color: $darkGreen;
 	}
 	.content {
@@ -61,10 +60,9 @@ header {
 #image_modal {
 	display: none;
 	position: fixed;
-	// padding: 1.5rem;
-	// background-color: $offwhite;
 	z-index: 111;
-	top: 145px;
+	top: 60px;
+	height: 90vh;
 	left: 50%;
 	transform: translateX(-50%);
 
@@ -96,9 +94,9 @@ header {
 	img {
 		width: 100%;
 		height: auto;
-		width: 80vw;
-		max-width: 460px;
-		max-height: 80vh;
+		width: auto;
+		max-width: 90vw;
+		max-height: 90vh;
 		border: 1.5rem solid $offwhite;
 	}
 }

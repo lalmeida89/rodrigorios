@@ -22,8 +22,8 @@
 #home .hero .image_wrapper {
   position: relative;
   overflow: hidden;
-  top: -50%;
-  height: 140%;
+  top: 0;
+  height: 100%;
   width: 100%;
 }
 
@@ -33,7 +33,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: url(./../public/homeHero-Color3.jpg) 60% center/auto 75% no-repeat;
+  background: url(./../public/homeHero-Color3.jpg) 60% center/auto 100% no-repeat;
   z-index: 1;
   -webkit-clip-path: polygon(0% 100%, 0% 100%, 0 100%);
           clip-path: polygon(0% 100%, 0% 100%, 0 100%);
@@ -51,7 +51,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: url(./../public/homeHero-BW_4.jpg) 35% center/auto 75% no-repeat;
+  background: url(./../public/homeHero-BW_4.jpg) 35% center/auto 100% no-repeat;
   z-index: 2;
 }
 
@@ -124,7 +124,7 @@
 }
 
 .intro_images {
-  padding: 5rem 1rem;
+  padding: 5rem 0;
   position: relative;
   z-index: 5;
   background-color: #eaf0e9;
@@ -132,8 +132,9 @@
 
 .intro_images .content {
   margin: auto;
-  width: 80%;
-  max-width: 981px;
+  width: 100%;
+  max-width: 1030px;
+  padding: 0 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,7 +152,6 @@
 
 .intro_images .content a {
   position: relative;
-  display: block;
   width: 100%;
   -webkit-transform: translateY(70px);
           transform: translateY(70px);
@@ -168,7 +168,7 @@
 }
 
 .intro_images .content a:first-child {
-  margin-bottom: 5rem;
+  margin-bottom: 1.5rem;
 }
 
 .intro_images .content a.animate {
@@ -240,7 +240,7 @@
 #about .content p {
   max-width: 350px;
   margin: auto;
-  text-align: justify;
+  text-align: left;
 }
 
 @-webkit-keyframes slideIntoPlace {
@@ -289,10 +289,6 @@
   #home .intro_images {
     padding: 10rem 0;
   }
-  #home .intro_images .content a {
-    max-height: 410px;
-    overflow: hidden;
-  }
   #home #about .content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -317,7 +313,6 @@
 
 @media screen and (min-width: 500px) {
   .intro_images .content {
-    max-width: 700px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

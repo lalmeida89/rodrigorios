@@ -88,7 +88,8 @@ header a img {
   display: none;
   position: fixed;
   z-index: 111;
-  top: 145px;
+  top: 60px;
+  height: 90vh;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -130,9 +131,9 @@ header a img {
 #image_modal img {
   width: 100%;
   height: auto;
-  width: 80vw;
-  max-width: 460px;
-  max-height: 80vh;
+  width: auto;
+  max-width: 90vw;
+  max-height: 90vh;
   border: 1.5rem solid #eaf0e9;
 }
 /*# sourceMappingURL=inner.css.map */
