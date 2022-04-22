@@ -13,6 +13,9 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 #home .hero .image_wrapper {
@@ -29,7 +32,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: url(./../public/homeHero-Color3.jpg) 60% center/auto 100% no-repeat fixed;
+  background: url(./../public/homeHero-Color3.jpg) 60% center/auto 100% no-repeat;
   z-index: 1;
   -webkit-clip-path: polygon(0% 100%, 0% 100%, 0 100%);
           clip-path: polygon(0% 100%, 0% 100%, 0 100%);
@@ -47,7 +50,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: url(./../public/homeHero-BW_4.jpg) 35% center/auto 100% no-repeat fixed;
+  background: url(./../public/homeHero-BW_4.jpg) 35% center/auto 100% no-repeat;
   z-index: 2;
 }
 
