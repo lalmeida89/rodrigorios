@@ -15,8 +15,6 @@
         height: 100vh; 
         position: relative;
         overflow: hidden;
-        position: sticky;
-        top: 0;
 
         .image_wrapper {
             position: relative;
@@ -37,7 +35,7 @@
 
 			&.animated {
 				z-index: 5;
-				animation: slideIntoPlace 3.5s ease forwards;
+				animation: slideIntoPlace 4.5s ease forwards;
 			}
         }
         .bw_image {
